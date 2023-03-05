@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Roboto,Arial,sans-serif
+}
+
+
+body {
+    font-size: 100%;
+}
+
+.container{
+    display: flex;
+}
+
+.container .nav-right{
+    flex:1;
+}
+
+.container .nav-right{
+    background-color: #f4f1f1;
+    height: 58.5px;
+    box-shadow: 0 2px 6px -6px #222;
+}
+
+.nav-right a {
+    line-height: 58.5px;
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+}
+
+.nav-right a:hover {
+   color: blue;
+}
+
+.container .title{
+    width: 240px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #f44336;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    /* font-size: 1rem; */
+}
+
+.container .title{
+    width: 240px;
+    
+    text-align: center;
+    background-color: #f44336;
+    
+    padding: 20px 0;
+    position: relative;
+    /* font-size: 1rem; */
+}
+
+.container .title > p{
+    
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    /* font-size: 1rem; */
+}
+
+.list-menu{
+    position: absolute;
+}
+
+.list-menu .item{
+    height: 34px;
+    line-height: 34px;
+    box-shadow: 0px 1px 1px #ddd;
+    padding: 0 10px;
+    width: 240px;
+}
+
+.list-menu .item:hover{
+   background-color: #ddd;
+}
+
+.item > a{
+    text-decoration: none;
+    color: #000;
+}
+
+.list-menu .sub-menu{
+    top: 0;
+    width: 960px;
+    height: auto!important;
+    border: 2px solid #ddd;
+    position: absolute; left: 240px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    min-height: 100%;
+    padding-left: 20px;
+    padding-right: 80px;
+    display: none;
+}
+
+.item:hover .sub-menu{
+    display: flex;
+}
+
+.sub-menu ul{
+   list-style-type: none;
+}
+ 
+
+.sub-menu a{
+    text-decoration: none;
+}
+
+.sub-item p{
+    font-weight: 700;
+    color: #f44336;
+}
+
+.sub-item a{
+    color: #000;
+}
+
+.sub-item a:hover{
+    color: #3164a0;
+}
+
+/* .list-menu .sub-menu p{
+    font-size: 0.5rem;
+} */
+
